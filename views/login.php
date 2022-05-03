@@ -11,7 +11,7 @@
             </span>
             <input type="password" name="password" placeholder="Password">
             <button type="login" name="btn">Log In</button>
-            <div class="signup">
+            <div class="newuser">
                 <a href="signup">Create new account</a>
             </div>
         </form>

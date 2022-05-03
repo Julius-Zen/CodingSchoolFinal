@@ -17,8 +17,17 @@ function checkIfImageExist($image) {
     return "assets/uplouds/no-image.png";
 }
 
+function copyright($year) {
+    $curent = date('Y');
+    
+    if($year >= $curent){
+        return $curent;
+    }
+
+    return $year . '-' . $curent;
+}
+
 function contentFinder() {
-    //print_r($_SERVER["REQUEST_URI"]);
     $urls = urlParser();
     $mainUrl = $urls[0] ?? null;
 

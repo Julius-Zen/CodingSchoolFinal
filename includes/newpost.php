@@ -18,24 +18,13 @@ function slugify($text, string $divider = '-')
     return $text;
 }
 
-
-//kai kintamasis declared duomenis sudedami i $_POST ("btn" - key)
-//jei btn = ""
 if(isset($_POST["new-content"])) {
-    //objektui iskvieciamas metodas 
     $input = $database->escapeData($_POST);
 
-    //isset:  
-    //1. !
-    //2. !$a = null;
-    //3. $a = ''; 
-   
-    // jei email visiskai tuscias arba null 1,2 arba tuscias 3
     if(!isset($input["name"]) || $input["name"] == ""){
         $validation["name"] = "privalomass.";
     } 
 
-    // jei psw nedeklaruotas ar psw yra tuscias 
     if(!isset($input["content"]) || $input["content"] == ""){
         $validation["content"] = "privalomas";
     }
@@ -69,8 +58,6 @@ if(isset($_POST["new-content"])) {
         }
     }
 
-    //query tik nusiuncia uzklausa
-    //queryfetch nusiuncia ir gauna 
     if(count($validation) == 0){
         $slug = slugify($input["name"] ?? '');
         while(true){
@@ -97,12 +84,13 @@ if(isset($_POST["new-content"])) {
                 `user_id`='".$_SESSION['id']."',
                 `image`='".$fullNewImagePath."'
         ");
-/*
-        $user = $database->queryFetch("SELECT created_at FROM posts WHERE id = '".$database->insertId()."'"); 
-*/
+
+       //$user = $database->queryFetch("SELECT created_at FROM posts WHERE id = '".$database->insertId()."'"); 
+
         header("location: /final/posts");
         exit();
     }
 }
 
     include_once "views/newpost.php";
+?>

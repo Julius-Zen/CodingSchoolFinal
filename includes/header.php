@@ -7,7 +7,6 @@ if(isset($_POST["btnlogout"])) {
     exit();
 }
 
-
-
    include_once "views/header.php";
+
 ?>

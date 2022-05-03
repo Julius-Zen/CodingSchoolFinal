@@ -1,5 +1,5 @@
 <div class="main-container">
-<div class="login">
+<div class="signup">
     <form method="post">
         <h3>Sign Up</h3> 
         <span>

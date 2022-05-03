@@ -30,5 +30,4 @@ if(!isset($post["id"])) {
 $image = checkIfImageExist($post['image']);
 
 include_once "views/post.php";
-
 ?>

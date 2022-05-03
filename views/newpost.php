@@ -10,8 +10,6 @@
                 <?php echo $validation["content"] ?? "" ?>
             </span>
             <textarea id="content" name="content" placeholder="Content" ></textarea>
-
-            
                 <input class="feature" 
                     id="feature" 
                     type="checkbox" 
@@ -19,10 +17,7 @@
                     value="1"
                 >
                 <label for="feature">Feature your post</label>
-           
-
             <input class="image" type="file" name="image" />
-        
             <button type="submit" name="new-content">Publish your post</button>
         </form>
     </div>
