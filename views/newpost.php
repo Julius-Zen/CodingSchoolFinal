@@ -1,4 +1,4 @@
-<div class="a">
+<div class="main-container">
     <div class="newpost">
         <form method="post" enctype="multipart/form-data">
             <h3>New post</h3>

@@ -1,7 +1,7 @@
 <div class="space"></div>
 <?php
     foreach($posts as $post){
-        echo '<div class="a">
+        echo '<div class="main-container">
             <div class="card-latest">
                 <div class="left">
                     <div class="title">'. $post["name"] .'</div>

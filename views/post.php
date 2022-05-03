@@ -1,5 +1,5 @@
 <?php
-    echo '<div class="a">
+    echo '<div class="main-container">
     <div class="article">
     <div class="picture">
         <img src="'.$image.'" alt="logo">

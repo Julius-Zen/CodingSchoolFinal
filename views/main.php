@@ -1,5 +1,5 @@
 
-<div class="a">
+<div class="main-container">
     <div class="slider">
         <img src="assets/css/images/Head-section.png" alt="logo">
     </div>

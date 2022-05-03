@@ -1,5 +1,5 @@
 <header>
-    <div class="a">
+    <div class="main-container">
         <nav>
             <div class="left">
                 <a class="logo" href="/final">Hotcofee</a>
